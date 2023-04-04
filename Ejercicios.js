@@ -17,6 +17,9 @@ const personajesSimpsons = [
 
     //Ejercicio2
     const sumaTotalEdad = menoresDe18.reduce((acumulador, menoresDe18) => acumulador + menoresDe18.edad, 0);
-
     console.log(sumaTotalEdad);
+
+    //Ejercicio3
+    const nombresSolos = personajesSimpsons.map( personajesSimpsons => personajesSimpsons.nombre);
+    console.log(nombresSolos);
 
