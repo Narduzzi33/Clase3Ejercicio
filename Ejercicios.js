@@ -23,3 +23,14 @@ const personajesSimpsons = [
     const nombresSolos = personajesSimpsons.map( personajesSimpsons => personajesSimpsons.nombre);
     console.log(nombresSolos);
 
+    //Ejercicio4
+    const cambioDeRol = personajesSimpsons.map(personajesSimpsons =>{
+        if(personajesSimpsons.edad < 18){
+            const {nombre,edad,rol} = personajesSimpsons;
+            const estudiante = {nombre, edad, rol: "Estudiante"} 
+            return estudiante;  
+        }
+        return personajesSimpsons;
+    })
+
+    console.log(cambioDeRol);
