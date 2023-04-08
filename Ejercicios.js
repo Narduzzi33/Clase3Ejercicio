@@ -34,3 +34,14 @@ const personajesSimpsons = [
     })
 
     console.log(cambioDeRol);
+
+    //Ejercicio5
+    const personajesSimpsons2 = [
+        { nombre: "Ned", edad: 36, rol: "Vecino" },
+        { nombre: "Edna", edad: 42, rol: "Maestra" },
+        { nombre: "Montogomety", edad: 100, rol: "Vecino" },
+        { nombre: "Krusty", edad: 45, rol: "Payaso" }
+        ];
+
+    const todosLosPersonajes = [...personajesSimpsons, ...personajesSimpsons2];
+    console.log(todosLosPersonajes);
